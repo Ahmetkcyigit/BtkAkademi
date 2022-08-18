@@ -1,0 +1,144 @@
+/* sabit kutular  */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* kutu genişliği  */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* satırlar */
+.row {
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* resimler  */
+img {
+    width: 100%;
+    margin: auto;
+}
+
+.icon img {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 10px;
+}
+
+#anamenu ul {
+    list-style-type: none;
+}
+
+#anamenu ul li {
+    border: 1px solid blue;
+    width: 25%;
+    float: left;
+    background-color: cadetblue;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#anamenu a {
+    color: white;
+    text-decoration: none;
+}
+
+#anamenu a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#altmenu p {
+    text-align: center;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+
+    background-color: cornsilk;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:500px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #anamenu ul li {
+        width: 100%
+    }
+}
+
+#ust {
+    min-height: 50px;
+}
+
+#menu {
+    min-height: 50px;
+}
+
+#orta {
+    min-height: 400px;
+}
+
+#alt {
+    min-height: 50px;
+}
